@@ -3,7 +3,7 @@ const Url = require('./models/url')
 const Counter = require('./models/counter')
 
 mongoose
-  .connect(process.env.MONGODB_URL, {
+  .connect('mongodb://mongo:27017/docker-node-mongo', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
